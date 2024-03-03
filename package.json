@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "name": "nuxt-tradingview",
+  "version": "0.0.1",
+  "description": "TradingView Widgets for Nuxt 3",
+  "repository": "volkanakkus/nuxt-trading",
   "license": "MIT",
   "type": "module",
   "exports": {
