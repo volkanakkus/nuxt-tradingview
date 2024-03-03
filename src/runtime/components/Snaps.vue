@@ -12,15 +12,16 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'single-ticker',
+    default: 'snaps',
   },
 });
-
 const options = {
-  symbol: 'FX:EURUSD',
-  width: 350,
+  feedMode: 'all_symbols',
   colorTheme: 'light',
   isTransparent: false,
+  displayMode: 'regular',
+  width: 480,
+  height: 830,
   locale: 'en',
   ...props.options,
 };
@@ -28,6 +29,6 @@ const options = {
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js'
 );
 </script>

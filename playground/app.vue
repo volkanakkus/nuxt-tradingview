@@ -1,8 +1,24 @@
 <template>
   <div>
-    <SingleTicker class="eur" />
-    <SingleTicker class="eu2" />
+    <SingleTicker />
+    <Ticker />
+    <SymbolInfo />
+    <StockMarket />
+    <Snaps />
+    <Screener />
+    <MiniChart />
+    <MarketOverview />
+    <MarketData />
+    <TickerTape />
+    <FundamentalData />
+    <ForexHeatMap />
+    <ForexCrossRates />
+    <EconomicCalendar />
+    <TechnicalAnalysis />
+    <CryptoMarket />
+    <CryptoHeatMap />
+    <CompanyProfile />
+    <Chart />
+    <SymbolOverview />
   </div>
 </template>
-
-<script setup></script>

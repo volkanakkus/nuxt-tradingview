@@ -12,15 +12,15 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'single-ticker',
+    default: 'forex-heat-map',
   },
 });
-
 const options = {
-  symbol: 'FX:EURUSD',
-  width: 350,
-  colorTheme: 'light',
+  width: 770,
+  height: 400,
+  currencies: ['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD', 'CNY'],
   isTransparent: false,
+  colorTheme: 'light',
   locale: 'en',
   ...props.options,
 };
@@ -28,6 +28,6 @@ const options = {
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js'
 );
 </script>

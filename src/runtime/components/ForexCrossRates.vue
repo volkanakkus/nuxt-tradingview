@@ -12,22 +12,24 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'single-ticker',
+    default: 'forex-cross-rates',
   },
 });
-
 const options = {
-  symbol: 'FX:EURUSD',
-  width: 350,
-  colorTheme: 'light',
+  symbol: 'NASDAQ:AAPL',
+  color: 'blak',
   isTransparent: false,
-  locale: 'en',
+  largeChartUrl: '',
+  displayMode: 'regular',
+  width: '100%',
+  height: '100%',
+  locale: 'br',
   ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js'
 );
 </script>

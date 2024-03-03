@@ -12,22 +12,22 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'single-ticker',
+    default: 'economic-calendar',
   },
 });
-
 const options = {
-  symbol: 'FX:EURUSD',
-  width: 350,
   colorTheme: 'light',
   isTransparent: false,
+  width: '510',
+  height: '600',
   locale: 'en',
+  importanceFilter: '-1,0,1',
   ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-events.js'
 );
 </script>

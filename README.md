@@ -16,7 +16,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 
 Use the TradingView Widgets in your Nuxt 3 Application
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
+<!-- - [✨ &nbsp;Release Notes](/CHANGELOG.md) -->
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-tradingview?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
@@ -27,19 +27,23 @@ Use the TradingView Widgets in your Nuxt 3 Application
 - Multiple Widgets in Single Page
 - No registration or API for TradingView
 
+## Documentation
+
+We're preparing the documentation and playground, ==it will be added soon==
+
 ## Quick Setup
 
 1. Add `nuxt-tradingview` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D nuxt-tradingview
-
 # Using yarn
-yarn add --dev nuxt-tradingview
+yarn add nuxt-tradingview
 
 # Using npm
-npm install --save-dev nuxt-tradingview
+npm install nuxt-tradingview
+
+# Using pnpm
+pnpm add nuxt-tradingview
 ```
 
 2. Add `nuxt-tradingview` to the `modules` section of `nuxt.config.ts`
@@ -52,7 +56,21 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use Nuxt TradingView in your Nuxt app ✨
+3. Module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
+
+```js
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-tradingview'
+  ],
+
+  tradingview: {
+    prefix: 'TV' // if it's not defined, you can use component as shown as in the documentation. 
+  }
+})
+```
+
+That's it! You can now use TradingView Widgets in your Nuxt app ✨
 
 ## Development
 
@@ -71,10 +89,6 @@ npm run dev:build
 
 # Run ESLint
 npm run lint
-
-# Run Vitest
-npm run test
-npm run test:watch
 
 # Release new version
 npm run release

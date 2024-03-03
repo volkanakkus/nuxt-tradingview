@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  tradingview: {},
+  tradingview: {
+    // prefix: 'TV',
+  },
   devtools: { enabled: true },
 });

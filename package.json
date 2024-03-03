@@ -31,12 +31,12 @@
     "@nuxt/kit": "^3.10.3"
   },
   "devDependencies": {
-    "@types/node": "^20.11.22",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
     "@nuxt/schema": "^3.10.3",
     "@nuxt/test-utils": "^3.11.0",
+    "@types/node": "^20.11.22",
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3",

@@ -12,15 +12,16 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'single-ticker',
+    default: 'crypto-heat-map',
   },
 });
-
 const options = {
-  symbol: 'FX:EURUSD',
-  width: 350,
-  colorTheme: 'light',
-  isTransparent: false,
+  dataSource: 'Crypto',
+  width: 770,
+  height: 400,
+  hasTopBar: false,
+  isDataSetEnabled: false,
+  colorTheme: 'dark',
   locale: 'en',
   ...props.options,
 };
@@ -28,6 +29,6 @@ const options = {
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-crypto-coins-heatmap.js'
 );
 </script>
