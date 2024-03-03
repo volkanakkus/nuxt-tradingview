@@ -29,7 +29,7 @@ Use the TradingView Widgets in your Nuxt 3 Application
 
 ## Documentation
 
-We're preparing the documentation and playground, ==it will be added soon==
+We're preparing the documentation and playground, it will be added soon.
 
 ## Quick Setup
 
