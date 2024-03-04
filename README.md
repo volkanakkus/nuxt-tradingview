@@ -56,7 +56,93 @@ export default defineNuxtConfig({
 })
 ```
 
-3. Module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
+That's it! You can now use TradingView Widgets in your Nuxt app ✨
+
+## Widgets Built-in
+
+When you add this module, the following widget components are **automatically imported** into the project.
+
+-   <Chart />
+-   <CompanyProfile />
+-   <CryptoHeatMap />
+-   <CryptoMarket />
+-   <EconomicCalendar />
+-   <ForexCrossRates />
+-   <ForexHeatMap />
+-   <FundamentalData />
+-   <MarketData />
+-   <MarketOverview />
+-   <MiniChart />
+-   <Screener />
+-   <SingleTicker />
+-   <Snaps />
+-   <StockMarket />
+-   <SymbolInfo />
+-   <SymbolOverview />
+-   <TechnicalAnalysis />
+-   <Ticker />
+-   <TickerTape />
+
+## Nuxt 3 Example
+
+```js
+<template>
+  <Chart />
+  <CryptoMarket />
+  <Snaps/>
+  <Screener/>
+</template>
+```
+
+If you want to use multiple charts in single vue file, you should define unique class for every widget.
+
+```js
+<template>
+  <Chart class="apple-chart"/>
+  <Chart class="nvidia"/>
+</template>
+```
+
+## Widget Options
+
+The built-in widget components have default options based on Tradingview. Check available options on [Tradingview](https://www.tradingview.com/widget-docs/widgets/)
+
+```js
+<template>
+  <Chart
+    :options="{
+      theme: 'dark',
+      autosize: true,
+      symbol: 'NASDAQ:AAPL',
+      timezone: 'Etc/UTC',
+    }"
+  />
+</template>
+```
+
+Or, you can pass variable into it:
+
+```js
+<template>
+  <Chart
+    :options="options"
+  />
+</template>
+
+<script lang="ts" setup>
+const options = {
+  theme: 'dark',
+  autosize: true,
+  symbol: 'NASDAQ:AAPL',
+  timezone: 'Etc/UTC',
+};
+</script>
+```
+
+
+## Module Options
+
+3. With module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
 
 ```js
 export default defineNuxtConfig({
@@ -65,12 +151,10 @@ export default defineNuxtConfig({
   ],
 
   tradingview: {
-    prefix: 'TV' // if it's not defined, you can use component as shown as in the documentation. 
+    prefix: 'TV' // if it's not defined, you can use the components as shown as in the docs. 
   }
 })
 ```
-
-That's it! You can now use TradingView Widgets in your Nuxt app ✨
 
 ## Development
 
