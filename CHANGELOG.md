@@ -7,14 +7,12 @@
 
 ### 📖 Documentation
 
-- Update README.md ([29418d0](https://github.com/volkanakkus/nuxt-tradingview/commit/29418d0))
-- Examples added ([1da63d1](https://github.com/volkanakkus/nuxt-tradingview/commit/1da63d1))
-- Examples added ([db0debb](https://github.com/volkanakkus/nuxt-tradingview/commit/db0debb))
-- Examples added ([6cd4763](https://github.com/volkanakkus/nuxt-tradingview/commit/6cd4763))
+- Docs: Update README.md ([29418d0](https://github.com/volkanakkus/nuxt-tradingview/commit/29418d0))
+- Docs: Examples added ([1da63d1](https://github.com/volkanakkus/nuxt-tradingview/commit/1da63d1))
 
 ### ❤️ Contributors
 
-- Volkan Akkuş <volkanakks.dev@gmail.com>
+- [Volkan Akkuş](https://github.com/volkanakkus) 
 
 ## v0.0.4
 
@@ -26,7 +24,7 @@
 
 ### ❤️ Contributors
 
-- Volkan Akkuş <volkanakks.dev@gmail.com>
+- [Volkan Akkuş](https://github.com/volkanakkus) 
 
 ## v0.0.3
 
