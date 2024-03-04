@@ -62,26 +62,26 @@ That's it! You can now use TradingView Widgets in your Nuxt app ✨
 
 When you add this module, the following widget components are **automatically imported** into the project.
 
--   <Chart />
--   <CompanyProfile />
--   <CryptoHeatMap />
--   <CryptoMarket />
--   <EconomicCalendar />
--   <ForexCrossRates />
--   <ForexHeatMap />
--   <FundamentalData />
--   <MarketData />
--   <MarketOverview />
--   <MiniChart />
--   <Screener />
--   <SingleTicker />
--   <Snaps />
--   <StockMarket />
--   <SymbolInfo />
--   <SymbolOverview />
--   <TechnicalAnalysis />
--   <Ticker />
--   <TickerTape />
+-   Chart
+-   CompanyProfile
+-   CryptoHeatMap
+-   CryptoMarket
+-   EconomicCalendar
+-   ForexCrossRates
+-   ForexHeatMap
+-   FundamentalData
+-   MarketData
+-   MarketOverview
+-   MiniChart
+-   Screener
+-   SingleTicker
+-   Snaps
+-   StockMarket
+-   SymbolInfo
+-   SymbolOverview
+-   TechnicalAnalysis
+-   Ticker
+-   TickerTape
 
 ## Nuxt 3 Example
 
