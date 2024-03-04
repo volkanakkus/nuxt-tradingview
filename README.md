@@ -142,7 +142,7 @@ const options = {
 
 ## Module Options
 
-3. With module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
+With module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
 
 ```js
 export default defineNuxtConfig({
@@ -154,6 +154,17 @@ export default defineNuxtConfig({
     prefix: 'TV' // if it's not defined, you can use the components as shown as in the docs. 
   }
 })
+```
+
+Then you can use the components as:
+
+```js
+<template>
+  <TVChart />
+  <TVCryptoMarket />
+  <TVSnaps/>
+  <TVScreener/>
+</template>
 ```
 
 ## Development
