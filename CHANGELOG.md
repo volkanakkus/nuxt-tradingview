@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.5
+
+### 🚀 Enhancements
+
+- Module version is corrected by applying [Semantic Versioning](https://semver.org/)
+
+### ❤️ Contributors
+
+- [Volkan Akkuş](https://github.com/volkanakkus) 
 
 ## v0.0.5
 

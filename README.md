@@ -31,6 +31,8 @@ Use the TradingView Widgets in your Nuxt 3 Application
 
 We're preparing the documentation and playground, it will be added soon.
 
+But you should also check the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more info and about of the widgets.
+
 ## Quick Setup
 
 1. Add `nuxt-tradingview` dependency to your project
@@ -105,7 +107,8 @@ If you want to use multiple charts in single vue file, you should define unique 
 
 ## Widget Options
 
-The built-in widget components have default options based on Tradingview. Check available options on [Tradingview](https://www.tradingview.com/widget-docs/widgets/)
+The built-in widget components have default options based on Tradingview. 
+Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
 
 ```js
 <template>
