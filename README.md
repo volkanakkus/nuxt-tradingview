@@ -165,6 +165,11 @@ Then you can use the components as:
 </template>
 ```
 
+---
+
+And also special thanks to [@ehsan-shv](https://github.com/ehsan-shv), this module created with the same concept of [vue-tradingviewWidgets
+](https://github.com/ehsan-shv/vue-tradingviewWidgets) package 💚 
+
 ## Development
 
 ```bash
