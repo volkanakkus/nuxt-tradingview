@@ -1,11 +1,4 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: Nuxt TradingView
-- Package name: nuxt-tradingview
-- Description: My new Nuxt module
--->
+![nuxt-tradingview-social-card](https://raw.githubusercontent.com/volkanakkus/nuxt-tradingview/assets/cover.png)
 
 # Nuxt TradingView
 
@@ -16,7 +9,6 @@ Find and replace all on all files (CMD+SHIFT+F):
 
 Use the TradingView Widgets in your Nuxt 3 Application
 
-<!-- - [✨ &nbsp;Release Notes](/CHANGELOG.md) -->
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-tradingview?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
@@ -26,12 +18,15 @@ Use the TradingView Widgets in your Nuxt 3 Application
 - Nuxt 3 Ready
 - Multiple Widgets in Single Page
 - No registration or API for TradingView
+  
+[✨ &nbsp;Release Notes](/CHANGELOG.md)
+
 
 ## Documentation
 
-We're preparing the documentation and playground, it will be added soon.
+While we're preparing detailed documentation and playground, you can check the examples below.
 
-But you should also check the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more info and about of the widgets.
+And also you can look over the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more info about of the widgets.
 
 ## Quick Setup
 
