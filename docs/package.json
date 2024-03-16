@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "nuxt-tradingview": "^1.0.5"
-  }
+  },
+  "resolutions": { "string-width": "4.2.3" }
 }
