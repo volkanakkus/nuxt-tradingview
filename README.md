@@ -24,7 +24,7 @@ Use the TradingView Widgets in your Nuxt 3 Application
 
 ## Documentation
 
-While we're preparing detailed documentation and playground, you can check the examples below.
+We've prepared **detailed documentation and playground** you can [**find here**](https://nuxt-tradingview.volkanakkus.com/), but also you can check the examples below.
 
 And also you can look over the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more info about of the widgets.
 
