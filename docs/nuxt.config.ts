@@ -6,8 +6,9 @@ export default defineNuxtConfig({
   modules: ['nuxt-tradingview', '@nuxt/content', '@nuxtlabs/github-module'],
 
   github: {
-    owner: 'volkanakkus',
-    repo: 'nuxt-tradingview',
-    branch: 'main',
+    // owner: 'volkanakkus',
+    // repo: 'nuxt-tradingview',
+    repo: 'volkanakkus/nuxt-tradingview',
+    // branch: 'main',
   },
 });

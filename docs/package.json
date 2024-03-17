@@ -6,19 +6,14 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "lint": "eslint ."
+    "preview": "nuxi preview"
   },
   "devDependencies": {
     "@nuxt-themes/docus": "latest",
-    "@nuxt/content": "^2.12.1",
-    "@nuxt/devtools": "^1.0.8",
-    "@nuxt/eslint-config": "^0.2.0",
-    "@nuxtlabs/github-module": "^1.6.3",
-    "@types/node": "^20.11.24",
-    "eslint": "^8.57.0",
-    "nuxt": "^3.10.3",
-    "pinceau": "^0.15.4"
+    "@nuxt/content": "2.12.0",
+    "@nuxtlabs/github-module": "1.6.3",
+    "nuxt": "3.10.3",
+    "pinceau": "0.15.4"
   },
   "dependencies": {
     "nuxt-tradingview": "^1.0.5"
