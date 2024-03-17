@@ -3,5 +3,11 @@ export default defineNuxtConfig({
   extends: ['@nuxt-themes/docus'],
   devtools: { enabled: true },
 
-  modules: ['nuxt-tradingview'],
+  modules: ['nuxt-tradingview', '@nuxt/content', '@nuxtlabs/github-module'],
+
+  github: {
+    owner: 'volkanakkus',
+    repo: 'nuxt-tradingview',
+    branch: 'main',
+  },
 });
