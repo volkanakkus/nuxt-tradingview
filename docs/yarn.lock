@@ -6031,10 +6031,10 @@ nuxt-icon@^0.3.3:
     "@nuxt/kit" "^3.3.1"
     nuxt-config-schema "^0.4.5"
 
-nuxt-tradingview@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/nuxt-tradingview/-/nuxt-tradingview-1.0.5.tgz#cc49a1b4df7e57cff318dae145371243a2dcbd1e"
-  integrity sha512-uvsU/SIDmv27JryI2dK5KY0v+cRkttpCoTioQ2odguJkzViF8LthgZaPtGojnTP61zEznYVY5nOmsoOLNJDggA==
+nuxt-tradingview@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-tradingview/-/nuxt-tradingview-1.1.0.tgz#45ed8d57ea6bd0e60db49c0ba2a57a1ebfaa606d"
+  integrity sha512-OESPWZBPmsaYA0mNUOXehRpwgiFzdxHw9hpfYr9ErzB+uIps3EtkXwqPyYYM/2rjyffvRchfiwZRdcf4fzHyRQ==
   dependencies:
     "@nuxt/kit" "^3.10.3"
 
@@ -8397,6 +8397,7 @@ wide-align@^1.1.2:
     string-width "^1.0.2 || 2 || 3 || 4"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
