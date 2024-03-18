@@ -5,7 +5,7 @@ export default defineAppConfig({
     branch: 'main',
   },
   docus: {
-    title: 'Nuxt TradingWiew',
+    title: 'Nuxt TradingView',
     description: '💸 Use TradingView Widgets in your Nuxt 3 Application',
     image: '/preview.jpg',
     url: 'https://nuxt-tradingview.volkanakkus.com/',
