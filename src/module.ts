@@ -72,7 +72,9 @@ export default defineNuxtModule<ModuleOptions>({
     // Add experimental options to runtimeConfig
     nuxt.options.runtimeConfig.public.tradingview = {
       ...nuxt.options.runtimeConfig.public.tradingview,
-      experimental: options.experimental,
+      experimental: {
+        anonymousCrossOrigin: !!options.experimental?.anonymousCrossOrigin,
+      },
     };
   },
 });
