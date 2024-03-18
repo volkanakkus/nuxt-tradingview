@@ -4,7 +4,7 @@ import type { AllWidgets } from './runtime/types';
 export interface ModuleOptions {
   prefix?: string;
   importOnly?: Partial<AllWidgets>[];
-  experimental: {
+  experimental?: {
     anonymousCrossOrigin?: boolean;
   };
 }

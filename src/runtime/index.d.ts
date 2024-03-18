@@ -1,7 +1,7 @@
 declare module 'nuxt/schema' {
   interface PublicRuntimeConfig {
     tradingview: {
-      experimental: {
+      experimental?: {
         anonymousCrossOrigin?: boolean;
       };
     };
