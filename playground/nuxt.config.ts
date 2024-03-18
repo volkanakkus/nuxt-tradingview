@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   tradingview: {
     // prefix: 'TV',
     // importOnly: ['Chart', 'SymbolOverview'],
-    experimental: {
-      anonymousCrossOrigin: true,
-    },
+    // experimental: {
+    //   anonymousCrossOrigin: true,
+    // },
   },
   devtools: { enabled: true },
 });
