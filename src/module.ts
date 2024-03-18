@@ -1,5 +1,4 @@
 import { defineNuxtModule, addComponent, createResolver } from '@nuxt/kit';
-import { defu } from 'defu';
 import type { AllWidgets } from './runtime/types';
 
 export interface ModuleOptions {
@@ -71,11 +70,9 @@ export default defineNuxtModule<ModuleOptions>({
     importWidgets.map(processComponent).forEach(addComponent);
 
     // Add experimental options to runtimeConfig
-    nuxt.options.runtimeConfig.public.tradingview = defu(
-      nuxt.options.runtimeConfig.public.tradingview,
-      {
-        experimental: options.experimental,
-      }
-    );
+    nuxt.options.runtimeConfig.public.tradingview = {
+      ...nuxt.options.runtimeConfig.public.tradingview,
+      experimental: options.experimental,
+    };
   },
 });
