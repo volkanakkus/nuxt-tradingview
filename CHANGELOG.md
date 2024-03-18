@@ -2,17 +2,13 @@
 
 ## v1.2.0
 
-[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.1.0...v1.2.0)
-
 ### 🚀 Enhancements
 
-- Experimental options introduced with anonymousCrossOrigin option to set all crossorigins anonymous ([6950d28](https://github.com/volkanakkus/nuxt-tradingview/commit/6950d28))
+- Experimental options introduced with anonymousCrossOrigin option to set all crossorigin anonymous ([6950d28](https://github.com/volkanakkus/nuxt-tradingview/commit/6950d28))
 
 ### 🩹 Fixes
 
 - Type fixes for PublicRuntimeConfig ([b389b78](https://github.com/volkanakkus/nuxt-tradingview/commit/b389b78))
-- Type fixes for PublicRuntimeConfig ([6fe422c](https://github.com/volkanakkus/nuxt-tradingview/commit/6fe422c))
-- Type fixes for PublicRuntimeConfig ([ac28954](https://github.com/volkanakkus/nuxt-tradingview/commit/ac28954))
 
 ### 💅 Refactors
 
@@ -24,9 +20,11 @@
 - Add importOnly config option to README.md ([b393621](https://github.com/volkanakkus/nuxt-tradingview/commit/b393621))
 - Update and enable playground ([0ec1ef3](https://github.com/volkanakkus/nuxt-tradingview/commit/0ec1ef3))
 
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.1.0...v1.2.0)
+
 ### ❤️ Contributors
 
-- Volkan Akkuş <volkanakks.dev@gmail.com>
+- [Volkan Akkuş](https://github.com/volkanakkus) 
 
 ## v1.1.0
 
