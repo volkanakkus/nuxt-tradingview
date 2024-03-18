@@ -38,7 +38,7 @@ export default (
     script.src = src;
 
     const runtimeConfig = useRuntimeConfig().public.tradingview;
-    if (runtimeConfig.experimental.anonymousCrossOrigin) {
+    if (runtimeConfig.experimental?.anonymousCrossOrigin) {
       script.crossOrigin = 'anonymous';
     }
 
