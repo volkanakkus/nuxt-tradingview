@@ -15,9 +15,9 @@ Use the TradingView Widgets in your Nuxt 3 Application
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- Nuxt 3 Ready
-- Multiple Widgets in Single Page
-- No registration or API for TradingView
+- 🧺 Multiple Widgets in Single Page
+- 🍧 No Registration or API for TradingView
+- 🌴 Optional Widget Inclusion
   
 [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
@@ -165,6 +165,18 @@ Then you can use the components as:
 </template>
 ```
 
+Add also a `importOnly` into `tradingview` section to inject only the widgets you need.
+
+```js{}[nuxt.config.ts]
+export default defineNuxtConfig({
+  tradingview: {
+    importOnly: ['Chart', 'CryptoMarket', 'Snaps', 'Screener'] 
+  }
+})
+```
+> [!NOTE]
+> Make sure to use the exact name of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](/documentation/widgets/overview/).
+
 ---
 
 And also special thanks to [@ehsan-shv](https://github.com/ehsan-shv), this module created with the same concept of [vue-tradingviewWidgets
@@ -185,11 +197,11 @@ npm run dev
 # Build the playground
 npm run dev:build
 
+# Develop the docs
+npm run dev:docs
+
 # Run ESLint
 npm run lint
-
-# Release new version
-npm run release
 ```
 
 <!-- Badges -->
