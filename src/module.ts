@@ -1,9 +1,13 @@
 import { defineNuxtModule, addComponent, createResolver } from '@nuxt/kit';
+import { defu } from 'defu';
 import type { AllWidgets } from './runtime/types';
 
 export interface ModuleOptions {
   prefix?: string;
   importOnly?: Partial<AllWidgets>[];
+  experimental: {
+    anonymousCrossOrigin?: boolean;
+  };
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -17,10 +21,14 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     prefix: '',
     importOnly: undefined,
+    experimental: {
+      anonymousCrossOrigin: false,
+    },
   },
-  setup(options) {
+  setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
+    // All components
     const components: AllWidgets[] = [
       'SingleTicker',
       'Ticker',
@@ -44,6 +52,7 @@ export default defineNuxtModule<ModuleOptions>({
       'SymbolOverview',
     ];
 
+    // Add components
     const processComponent = (component: AllWidgets) => {
       return {
         name: `${options.prefix}${component}`,
@@ -52,6 +61,7 @@ export default defineNuxtModule<ModuleOptions>({
       };
     };
 
+    // Add widgets selectively or all
     const importWidgets = options.importOnly
       ? components.filter((component) =>
           options.importOnly?.includes(component)
@@ -59,5 +69,13 @@ export default defineNuxtModule<ModuleOptions>({
       : components;
 
     importWidgets.map(processComponent).forEach(addComponent);
+
+    // Add experimental options to runtimeConfig
+    nuxt.options.runtimeConfig.public.tradingview = defu(
+      nuxt.options.runtimeConfig.public.tradingview,
+      {
+        experimental: options.experimental,
+      }
+    );
   },
 });

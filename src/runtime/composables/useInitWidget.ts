@@ -1,4 +1,5 @@
 import { ref, onMounted } from 'vue';
+import { useRuntimeConfig } from '#app';
 import type { ReturnedObject } from '../types';
 
 export default (
@@ -35,6 +36,12 @@ export default (
     script.type = 'text/javascript';
     script.async = true;
     script.src = src;
+
+    const runtimeConfig = useRuntimeConfig().public.tradingview;
+    if (runtimeConfig.experimental.anonymousCrossOrigin) {
+      script.crossOrigin = 'anonymous';
+    }
+
     script.textContent = JSON.stringify(options);
     if (tradingview.value) tradingview.value.appendChild(script);
   };
