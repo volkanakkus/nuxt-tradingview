@@ -73,6 +73,7 @@ When you add this module, the following widget components are **automatically im
 -   Screener
 -   SingleTicker
 -   StockMarket
+-   StockHeatMap
 -   SymbolInfo
 -   SymbolOverview
 -   TechnicalAnalysis

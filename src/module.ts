@@ -33,6 +33,7 @@ export default defineNuxtModule<ModuleOptions>({
       'Ticker',
       'SymbolInfo',
       'StockMarket',
+      'StockHeatMap',
       'Screener',
       'MiniChart',
       'MarketOverview',

@@ -15,6 +15,7 @@ export type AllWidgets =
   | 'SymbolInfo'
   | 'StockMarket'
   | 'Screener'
+  | 'StockHeatMap'
   | 'MiniChart'
   | 'MarketOverview'
   | 'MarketData'

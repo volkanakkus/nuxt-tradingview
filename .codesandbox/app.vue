@@ -14,6 +14,7 @@
     <Screener />
     <SingleTicker />
     <StockMarket />
+    <StockHeatMap />
     <SymbolInfo />
     <SymbolOverview />
     <TechnicalAnalysis />
