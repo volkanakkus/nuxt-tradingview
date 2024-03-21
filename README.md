@@ -97,8 +97,34 @@ If you want to use multiple charts in single vue file, you should define unique 
 ```js
 <template>
   <Chart class="apple-chart"/>
-  <Chart class="nvidia"/>
+  <Chart class="nvidia-chart"/>
 </template>
+```
+
+For dynamic color mode support, you can integrate your color mode plugin or [@nuxtjs/color-mode](https://nuxt.com/modules/color-mode) module to the widget options with the `theme` property.
+
+And for re-render the widget with every color change, you should also bind the color mode to the `:key` attribute in the template.
+
+Example below is using the [@nuxtjs/color-mode](https://nuxt.com/modules/color-mode) module:
+
+```js
+<template>
+  <div>
+    <Chart :key="$colorMode.value" :options="options" />
+  </div>
+</template>
+
+<script lang="ts" setup>
+const { $colorMode } = useNuxtApp();
+
+const options = computed(() => ({
+  theme: $colorMode.value, // it must be 'light' or 'dark'
+  width: '100%',
+  height: '400',
+  symbol: 'NASDAQ:AAPL',
+  ...
+}));
+</script>
 ```
 
 ## Widget Options
