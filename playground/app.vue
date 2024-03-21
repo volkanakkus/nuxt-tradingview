@@ -13,13 +13,13 @@
     <MiniChart />
     <Screener />
     <SingleTicker />
-    <Snaps />
     <StockMarket />
     <SymbolInfo />
     <SymbolOverview />
     <TechnicalAnalysis />
     <Ticker />
     <TickerTape />
+    <TopStories />
   </div>
 </template>
 

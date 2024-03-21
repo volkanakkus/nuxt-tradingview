@@ -14,7 +14,6 @@ export type AllWidgets =
   | 'Ticker'
   | 'SymbolInfo'
   | 'StockMarket'
-  | 'Snaps'
   | 'Screener'
   | 'MiniChart'
   | 'MarketOverview'
@@ -29,4 +28,5 @@ export type AllWidgets =
   | 'CryptoHeatMap'
   | 'CompanyProfile'
   | 'Chart'
+  | 'TopStories'
   | 'SymbolOverview';

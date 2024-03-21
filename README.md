@@ -72,13 +72,13 @@ When you add this module, the following widget components are **automatically im
 -   MiniChart
 -   Screener
 -   SingleTicker
--   Snaps
 -   StockMarket
 -   SymbolInfo
 -   SymbolOverview
 -   TechnicalAnalysis
 -   Ticker
 -   TickerTape
+-   TopStories
 
 ## Nuxt 3 Example
 
@@ -86,7 +86,7 @@ When you add this module, the following widget components are **automatically im
 <template>
   <Chart />
   <CryptoMarket />
-  <Snaps/>
+  <TopStories/>
   <Screener/>
 </template>
 ```
@@ -160,7 +160,7 @@ Then you can use the components as:
 <template>
   <TVChart />
   <TVCryptoMarket />
-  <TVSnaps/>
+  <TVTopStories/>
   <TVScreener/>
 </template>
 ```
@@ -170,7 +170,7 @@ Add also a `importOnly` into `tradingview` section to inject only the widgets yo
 ```js{}[nuxt.config.ts]
 export default defineNuxtConfig({
   tradingview: {
-    importOnly: ['Chart', 'CryptoMarket', 'Snaps', 'Screener'] 
+    importOnly: ['Chart', 'CryptoMarket', 'TopStories', 'Screener'] 
   }
 })
 ```

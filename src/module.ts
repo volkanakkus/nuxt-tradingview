@@ -33,7 +33,6 @@ export default defineNuxtModule<ModuleOptions>({
       'Ticker',
       'SymbolInfo',
       'StockMarket',
-      'Snaps',
       'Screener',
       'MiniChart',
       'MarketOverview',
@@ -49,6 +48,7 @@ export default defineNuxtModule<ModuleOptions>({
       'CompanyProfile',
       'Chart',
       'SymbolOverview',
+      'TopStories',
     ];
 
     // Add components

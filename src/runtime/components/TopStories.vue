@@ -12,7 +12,7 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'snaps',
+    default: 'top-stories',
   },
 });
 const options = {
