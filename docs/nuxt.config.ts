@@ -5,6 +5,10 @@ export default defineNuxtConfig({
 
   modules: ['nuxt-tradingview', '@nuxt/content', '@nuxtlabs/github-module'],
 
+  tradingview: {
+    prefix: 'Docs',
+  },
+
   github: {
     owner: 'volkanakkus',
     repo: 'nuxt-tradingview',
