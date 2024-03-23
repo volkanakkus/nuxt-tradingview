@@ -1,6 +1,6 @@
 <template>
   <svg
-    v-if="isDark"
+    v-if="$colorMode.value === 'dark'"
     width="auto"
     class="illustration"
     height="226"
@@ -237,7 +237,7 @@
   </svg>
 
   <svg
-    v-else
+    v-if="$colorMode.value === 'light'"
     width="auto"
     height="226"
     viewBox="0 0 403 226"
@@ -444,8 +444,6 @@
 
 <script setup lang="ts">
 const { $colorMode } = useNuxtApp();
-
-const isDark = computed(() => $colorMode.value === 'dark');
 </script>
 
 <style>

@@ -14,4 +14,9 @@ export default defineNuxtConfig({
     repo: 'nuxt-tradingview',
     branch: 'main',
   },
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
 });
