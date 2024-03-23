@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.3.0
+
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Correct the Snaps Widget name to TopStories ([802cbf7](https://github.com/volkanakkus/nuxt-tradingview/commit/802cbf7))
+- Add StockHeatMap Widget ([8587834](https://github.com/volkanakkus/nuxt-tradingview/commit/8587834))
+
+### 📖 Documentation
+
+- Playground chaged to codesandbox ([ad62b0b](https://github.com/volkanakkus/nuxt-tradingview/commit/ad62b0b))
+- Add the Dynamic Color Mode to docs and README.md ([4648b05](https://github.com/volkanakkus/nuxt-tradingview/commit/4648b05))
+- Update README.md according to Docs ([2fe3c95](https://github.com/volkanakkus/nuxt-tradingview/commit/2fe3c95))
+- Add widget detail pages ([7b271cb](https://github.com/volkanakkus/nuxt-tradingview/commit/7b271cb))
+- Re-arrange the orders of the widgets in 1.overview.md ([82f0bf0](https://github.com/volkanakkus/nuxt-tradingview/commit/82f0bf0))
+- Update illustration for color-mode ([0957686](https://github.com/volkanakkus/nuxt-tradingview/commit/0957686))
+- Update configuration.md ([e6df319](https://github.com/volkanakkus/nuxt-tradingview/commit/e6df319))
+- Update color mode options ([3606916](https://github.com/volkanakkus/nuxt-tradingview/commit/3606916))
+- Update the Illustration ([6a43fda](https://github.com/volkanakkus/nuxt-tradingview/commit/6a43fda))
+
+### 🏡 Chore
+
+- **release:** V1.2.0 ([ae61604](https://github.com/volkanakkus/nuxt-tradingview/commit/ae61604))
+- Correct the default options of the widgets according the docs ([56d698c](https://github.com/volkanakkus/nuxt-tradingview/commit/56d698c))
+- Update lint options ([55463ff](https://github.com/volkanakkus/nuxt-tradingview/commit/55463ff))
+
+### ❤️ Contributors
+
+- Volkan Akkuş <volkanakks.dev@gmail.com>
+
 ## v1.2.0
 
 ### 🚀 Enhancements

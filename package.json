@@ -1,6 +1,6 @@
 {
   "name": "nuxt-tradingview",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "TradingView Widgets for Nuxt 3",
   "repository": "volkanakkus/nuxt-tradingview",
   "license": "MIT",
