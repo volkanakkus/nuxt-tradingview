@@ -4,7 +4,7 @@
       v-for="(release, index) in releases"
       :key="release.name"
       class="release">
-      <ProseH2 style="margin-top: 10px" :id="release.name">
+      <ProseH2 :id="release.name" style="margin-top: 10px">
         <div class="releases-head">
           {{ release.name }}
           <Badge v-if="index === 0" type="info"> Latest </Badge>
