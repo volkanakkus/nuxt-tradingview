@@ -16,8 +16,13 @@ const props = defineProps({
   },
 });
 const options = {
-  width: 770,
+  width: '100%',
   height: 450,
+  colorTheme: 'dark',
+  showSymbolLogo: true,
+  isTransparent: false,
+  locale: 'en',
+  backgroundColor: '#0C0C0D',
   symbolsGroups: [
     {
       name: 'Indices',
@@ -25,15 +30,15 @@ const options = {
       symbols: [
         {
           name: 'FOREXCOM:SPXUSD',
-          displayName: 'S&P 500',
+          displayName: 'S&P 500 Index',
         },
         {
           name: 'FOREXCOM:NSXUSD',
-          displayName: 'US 100',
+          displayName: 'US 100 Cash CFD',
         },
         {
           name: 'FOREXCOM:DJI',
-          displayName: 'Dow 30',
+          displayName: 'Dow Jones Industrial Average Index',
         },
         {
           name: 'INDEX:NKY',
@@ -45,7 +50,7 @@ const options = {
         },
         {
           name: 'FOREXCOM:UKXGBP',
-          displayName: 'UK 100',
+          displayName: 'FTSE 100 Index',
         },
       ],
     },
@@ -67,11 +72,11 @@ const options = {
         },
         {
           name: 'NYMEX:CL1!',
-          displayName: 'Crude Oil',
+          displayName: 'WTI Crude Oil',
         },
         {
           name: 'NYMEX:NG1!',
-          displayName: 'Natural Gas',
+          displayName: 'Gas',
         },
         {
           name: 'CBOT:ZC1!',
@@ -79,65 +84,7 @@ const options = {
         },
       ],
     },
-    {
-      name: 'Bonds',
-      originalName: 'Bonds',
-      symbols: [
-        {
-          name: 'CME:GE1!',
-          displayName: 'Eurodollar',
-        },
-        {
-          name: 'CBOT:ZB1!',
-          displayName: 'T-Bond',
-        },
-        {
-          name: 'CBOT:UB1!',
-          displayName: 'Ultra T-Bond',
-        },
-        {
-          name: 'EUREX:FGBL1!',
-          displayName: 'Euro Bund',
-        },
-        {
-          name: 'EUREX:FBTP1!',
-          displayName: 'Euro BTP',
-        },
-        {
-          name: 'EUREX:FGBM1!',
-          displayName: 'Euro BOBL',
-        },
-      ],
-    },
-    {
-      name: 'Forex',
-      originalName: 'Forex',
-      symbols: [
-        {
-          name: 'FX:EURUSD',
-        },
-        {
-          name: 'FX:GBPUSD',
-        },
-        {
-          name: 'FX:USDJPY',
-        },
-        {
-          name: 'FX:USDCHF',
-        },
-        {
-          name: 'FX:AUDUSD',
-        },
-        {
-          name: 'FX:USDCAD',
-        },
-      ],
-    },
   ],
-  showSymbolLogo: true,
-  colorTheme: 'light',
-  isTransparent: false,
-  locale: 'en',
   ...props.options,
 };
 

@@ -16,14 +16,12 @@ const props = defineProps({
   },
 });
 const options = {
-  symbol: 'NASDAQ:AAPL',
-  color: 'blak',
-  isTransparent: false,
-  largeChartUrl: '',
-  displayMode: 'regular',
   width: '100%',
-  height: '100%',
-  locale: 'br',
+  height: 450,
+  colorTheme: 'dark',
+  currencies: ['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD'],
+  isTransparent: false,
+  locale: 'en',
   ...props.options,
 };
 

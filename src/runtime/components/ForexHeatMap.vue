@@ -16,11 +16,11 @@ const props = defineProps({
   },
 });
 const options = {
-  width: 770,
-  height: 400,
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
   currencies: ['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD', 'CNY'],
   isTransparent: false,
-  colorTheme: 'light',
   locale: 'en',
   ...props.options,
 };

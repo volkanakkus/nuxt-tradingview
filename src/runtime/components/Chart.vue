@@ -17,12 +17,14 @@ const props = defineProps({
 });
 
 const options = {
-  autosize: true,
+  width: '100%',
+  height: '400',
   symbol: 'NASDAQ:AAPL',
   interval: 'D',
   timezone: 'Etc/UTC',
-  theme: 'light',
+  theme: 'dark',
   style: '1',
+  backgroundColor: '#0C0C0D',
   locale: 'en',
   enable_publishing: false,
   allow_symbol_change: true,

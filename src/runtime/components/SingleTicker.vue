@@ -17,9 +17,9 @@ const props = defineProps({
 });
 
 const options = {
+  colorTheme: 'dark',
   symbol: 'FX:EURUSD',
   width: 350,
-  colorTheme: 'light',
   isTransparent: false,
   locale: 'en',
   ...props.options,

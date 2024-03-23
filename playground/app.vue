@@ -13,21 +13,24 @@
     <MiniChart />
     <Screener />
     <SingleTicker />
-    <Snaps />
     <StockMarket />
+    <StockHeatMap />
     <SymbolInfo />
     <SymbolOverview />
     <TechnicalAnalysis />
     <Ticker />
     <TickerTape />
+    <TopStories />
   </div>
 </template>
 
 <script lang="ts" setup>
-const options = {
-  theme: 'dark',
-  autosize: true,
-  symbol: 'NASDAQ:AAPL',
-  timezone: 'Etc/UTC',
-};
+// You pass the options to the component as props
+
+// const options = ref({
+//   theme: 'dark',
+//   autosize: true,
+//   symbol: 'NASDAQ:AAPL',
+//   timezone: 'Etc/UTC',
+// })
 </script>

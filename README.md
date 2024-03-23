@@ -72,38 +72,34 @@ When you add this module, the following widget components are **automatically im
 -   MiniChart
 -   Screener
 -   SingleTicker
--   Snaps
 -   StockMarket
+-   StockHeatMap
 -   SymbolInfo
 -   SymbolOverview
 -   TechnicalAnalysis
 -   Ticker
 -   TickerTape
+-   TopStories
 
 ## Nuxt 3 Example
+
+The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied. Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
+
+
+#### Basic Usage
+
+Example of using all widgets with default options:
 
 ```js
 <template>
   <Chart />
   <CryptoMarket />
-  <Snaps/>
+  <TopStories/>
   <Screener/>
 </template>
 ```
 
-If you want to use multiple charts in single vue file, you should define unique class for every widget.
-
-```js
-<template>
-  <Chart class="apple-chart"/>
-  <Chart class="nvidia"/>
-</template>
-```
-
-## Widget Options
-
-The built-in widget components have default options based on Tradingview. 
-Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
+ Configuring the widgets with options according to [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/):
 
 ```js
 <template>
@@ -118,38 +114,91 @@ Check available options on [Tradingview Docs](https://www.tradingview.com/widget
 </template>
 ```
 
-Or, you can pass variable into it:
+Or, you can pass a ref variable into it:
 
 ```js
 <template>
-  <Chart
-    :options="options"
-  />
+  <Chart :options="chartOptions" />
 </template>
 
-<script lang="ts" setup>
-const options = {
+<script setup lang="ts">
+const chartOptions = ref({
   theme: 'dark',
   autosize: true,
   symbol: 'NASDAQ:AAPL',
   timezone: 'Etc/UTC',
-};
+})
 </script>
 ```
 
+#### Multiple Widgets
+
+If you want to use the same widgets multiple times on a single page, you should define a unique class for each widget.
+
+```js
+<template>
+  <Chart class="apple-chart"/>
+  <Chart class="nvidia-chart"/>
+</template>
+```
+
+For example, in a for loop, you can use the key as a unique class:
+
+```js
+<template>
+  <div v-for="symbol in symbols" :key="symbol">
+    <SingleTicker :class="`ticker-${symbol}`" :options="{ symbol }" />
+  </div>
+</template>
+
+<script setup lang="ts">
+const symbols = ref(['FX:EURUSD', 'FX:GBPUSD', 'FX:USDJPY']);
+</script>
+```
+
+#### Dynamic Color Mode
+
+For dynamic color mode support, you can integrate your color mode plugin or [@nuxtjs/color-mode](https://nuxt.com/modules/color-mode) module to the widget options with the `theme` or `colorTheme` property.
+
+And for re-render the widget with every color change, you should also bind the color mode to the `:key` attribute in the template.
+
+Example below is using the [@nuxtjs/color-mode](https://nuxt.com/modules/color-mode) module:
+
+```js
+<template>
+  <div>
+    <Chart :key="$colorMode.value" :options="options" />
+  </div>
+</template>
+
+<script lang="ts" setup>
+const { $colorMode } = useNuxtApp();
+
+const options = computed(() => ({
+  theme: $colorMode.value, // it must be 'light' or 'dark'
+  width: '100%',
+  height: '400',
+  symbol: 'NASDAQ:AAPL',
+  ...
+}));
+</script>
+```
 
 ## Module Options
 
-With module options, you can set prefix to every component. You must add `tradingview` config to `nuxt.config.ts`, here's the example:
+The module by default will inject **all widgets** but you can configure it to inject only the widgets you need. Also you can add prefix to widget component names to avoid conflicts with other local components.
+
+For module options, you must add `tradingview` config to `nuxt.config.ts`, 
+
+#### prefix
+
+Add a `prefix` into `tradingview` section to use every widget with that prefix.
+
 
 ```js
 export default defineNuxtConfig({
-  modules: [
-    'nuxt-tradingview'
-  ],
-
   tradingview: {
-    prefix: 'TV' // if it's not defined, you can use the components as shown as in the docs. 
+    prefix: 'TV' 
   }
 })
 ```
@@ -160,20 +209,27 @@ Then you can use the components as:
 <template>
   <TVChart />
   <TVCryptoMarket />
-  <TVSnaps/>
+  <TVTopStories/>
   <TVScreener/>
 </template>
 ```
 
-Add also a `importOnly` into `tradingview` section to inject only the widgets you need.
+> [!TIP]
+> If `prefix` is not defined, you can use the components as shown as in the docs. 
 
-```js{}[nuxt.config.ts]
+
+#### importOnly
+
+Add a `importOnly` into `tradingview` section to inject only the widgets you need. This can be useful if you want to reduce the bundle size. 
+
+```js
 export default defineNuxtConfig({
   tradingview: {
-    importOnly: ['Chart', 'CryptoMarket', 'Snaps', 'Screener'] 
+    importOnly: ['Chart', 'CryptoMarket', 'TopStories', 'Screener'] 
   }
 })
 ```
+
 > [!NOTE]
 > Make sure to use the exact name of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](/documentation/widgets/overview/).
 

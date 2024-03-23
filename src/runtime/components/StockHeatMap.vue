@@ -12,23 +12,30 @@ const props = defineProps({
   },
   class: {
     type: String,
-    default: 'snaps',
+    default: 'stock-heat-map',
   },
 });
 const options = {
-  feedMode: 'all_symbols',
-  colorTheme: 'light',
-  isTransparent: false,
-  displayMode: 'regular',
-  width: 480,
-  height: 830,
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
+  exchanges: [],
+  dataSource: 'SPX500',
+  grouping: 'no_group',
+  blockSize: 'market_cap_basic',
+  blockColor: 'Perf.YTD',
   locale: 'en',
+  symbolUrl: '',
+  hasTopBar: false,
+  isDataSetEnabled: false,
+  isZoomEnabled: true,
+  hasSymbolTooltip: true,
   ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(
   options,
   props.class,
-  'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js'
+  'https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js'
 );
 </script>

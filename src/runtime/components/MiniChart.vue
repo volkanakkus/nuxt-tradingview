@@ -16,15 +16,12 @@ const props = defineProps({
   },
 });
 const options = {
+  width: '100%',
+  height: 200,
+  colorTheme: 'dark',
   symbol: 'FX:EURUSD',
-  width: 350,
-  height: 220,
   locale: 'en',
   dateRange: '12M',
-  colorTheme: 'light',
-  trendLineColor: 'rgba(41, 98, 255, 1)',
-  underLineColor: 'rgba(41, 98, 255, 0.3)',
-  underLineBottomColor: 'rgba(41, 98, 255, 0)',
   isTransparent: false,
   autosize: false,
   largeChartUrl: '',
