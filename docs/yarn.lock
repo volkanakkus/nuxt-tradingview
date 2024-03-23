@@ -6031,10 +6031,10 @@ nuxt-icon@^0.3.3:
     "@nuxt/kit" "^3.3.1"
     nuxt-config-schema "^0.4.5"
 
-nuxt-tradingview@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nuxt-tradingview/-/nuxt-tradingview-1.1.0.tgz#45ed8d57ea6bd0e60db49c0ba2a57a1ebfaa606d"
-  integrity sha512-OESPWZBPmsaYA0mNUOXehRpwgiFzdxHw9hpfYr9ErzB+uIps3EtkXwqPyYYM/2rjyffvRchfiwZRdcf4fzHyRQ==
+nuxt-tradingview@latest:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/nuxt-tradingview/-/nuxt-tradingview-1.3.0.tgz#ea220da6312bad09a4e70c7004c934a10a1bb913"
+  integrity sha512-g/oS+Mvbeve0Im8UsaAAT4U3fcI5iyrY5aQG7oXYcNkE95he57vzgZrjJHCN7gAvzfGDf2nJEe+jaOP+qMmfEQ==
   dependencies:
     "@nuxt/kit" "^3.10.3"
 
