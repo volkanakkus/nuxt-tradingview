@@ -83,10 +83,7 @@ When you add this module, the following widget components are **automatically im
 
 ## Nuxt 3 Example
 
-The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied.
-
-> [!NOTE]
-> Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
+The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied. Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
 
 
 #### Basic Usage
@@ -223,7 +220,7 @@ Then you can use the components as:
 
 #### importOnly
 
-Add a `importOnly` into `tradingview` section to inject only the widgets you need.
+Add a `importOnly` into `tradingview` section to inject only the widgets you need. This can be useful if you want to reduce the bundle size. 
 
 ```js
 export default defineNuxtConfig({
