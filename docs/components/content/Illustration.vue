@@ -1,8 +1,7 @@
 <template>
   <svg
     v-if="$colorMode.value === 'dark'"
-    width="auto"
-    class="illustration"
+    width="100%"
     height="226"
     viewBox="0 0 403 226"
     fill="none"
@@ -238,11 +237,10 @@
 
   <svg
     v-if="$colorMode.value === 'light'"
-    width="auto"
+    width="100%"
     height="226"
     viewBox="0 0 403 226"
     fill="none"
-    class="illustration"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <g clip-path="url(#clip0_9_2)">
@@ -445,23 +443,3 @@
 <script setup lang="ts">
 const { $colorMode } = useNuxtApp();
 </script>
-
-<style>
-@media screen and (max-width: 500px) {
-  .illustration {
-    transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .illustration {
-    transform: scale(0.75);
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .illustration {
-    transform: scale(0.7);
-  }
-}
-</style>
