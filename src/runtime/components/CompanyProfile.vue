@@ -16,11 +16,11 @@ const props = defineProps({
   },
 });
 const options = {
-  symbol: 'NASDAQ:AAPL',
-  width: 480,
-  height: 650,
-  colorTheme: 'light',
+  width: '100%',
+  height: 450,
   isTransparent: false,
+  colorTheme: 'dark',
+  symbol: 'NASDAQ:AAPL',
   locale: 'en',
   ...props.options,
 };

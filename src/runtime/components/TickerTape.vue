@@ -16,18 +16,23 @@ const props = defineProps({
   },
 });
 const options = {
+  colorTheme: 'dark',
+  showSymbolLogo: true,
+  isTransparent: false,
+  displayMode: 'adaptive',
+  locale: 'en',
   symbols: [
     {
       proName: 'FOREXCOM:SPXUSD',
-      title: 'S&P 500',
+      title: 'S&P 500 Index',
     },
     {
       proName: 'FOREXCOM:NSXUSD',
-      title: 'US 100',
+      title: 'US 100 Cash CFD',
     },
     {
       proName: 'FX_IDC:EURUSD',
-      title: 'EUR/USD',
+      title: 'EUR to USD',
     },
     {
       proName: 'BITSTAMP:BTCUSD',
@@ -38,11 +43,6 @@ const options = {
       title: 'Ethereum',
     },
   ],
-  showSymbolLogo: true,
-  colorTheme: 'light',
-  isTransparent: false,
-  displayMode: 'adaptive',
-  locale: 'en',
   ...props.options,
 };
 

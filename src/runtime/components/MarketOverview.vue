@@ -16,7 +16,9 @@ const props = defineProps({
   },
 });
 const options = {
-  colorTheme: 'light',
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
   dateRange: '12M',
   showChart: true,
   locale: 'en',
@@ -24,12 +26,10 @@ const options = {
   isTransparent: false,
   showSymbolLogo: true,
   showFloatingTooltip: false,
-  width: '400',
-  height: '660',
   plotLineColorGrowing: 'rgba(41, 98, 255, 1)',
   plotLineColorFalling: 'rgba(41, 98, 255, 1)',
-  gridLineColor: 'rgba(240, 243, 250, 0)',
-  scaleFontColor: 'rgba(120, 123, 134, 1)',
+  gridLineColor: 'rgba(42, 46, 57, 0)',
+  scaleFontColor: 'rgba(134, 137, 147, 1)',
   belowLineFillColorGrowing: 'rgba(41, 98, 255, 0.12)',
   belowLineFillColorFalling: 'rgba(41, 98, 255, 0.12)',
   belowLineFillColorGrowingBottom: 'rgba(41, 98, 255, 0)',
@@ -41,15 +41,15 @@ const options = {
       symbols: [
         {
           s: 'FOREXCOM:SPXUSD',
-          d: 'S&P 500',
+          d: 'S&P 500 Index',
         },
         {
           s: 'FOREXCOM:NSXUSD',
-          d: 'US 100',
+          d: 'US 100 Cash CFD',
         },
         {
           s: 'FOREXCOM:DJI',
-          d: 'Dow 30',
+          d: 'Dow Jones Industrial Average Index',
         },
         {
           s: 'INDEX:NKY',
@@ -61,7 +61,7 @@ const options = {
         },
         {
           s: 'FOREXCOM:UKXGBP',
-          d: 'UK 100',
+          d: 'FTSE 100 Index',
         },
       ],
       originalTitle: 'Indices',
@@ -83,11 +83,11 @@ const options = {
         },
         {
           s: 'NYMEX:CL1!',
-          d: 'Crude Oil',
+          d: 'WTI Crude Oil',
         },
         {
           s: 'NYMEX:NG1!',
-          d: 'Natural Gas',
+          d: 'Gas',
         },
         {
           s: 'CBOT:ZC1!',
@@ -99,10 +99,6 @@ const options = {
     {
       title: 'Bonds',
       symbols: [
-        {
-          s: 'CME:GE1!',
-          d: 'Eurodollar',
-        },
         {
           s: 'CBOT:ZB1!',
           d: 'T-Bond',
@@ -131,21 +127,27 @@ const options = {
       symbols: [
         {
           s: 'FX:EURUSD',
+          d: 'EUR to USD',
         },
         {
           s: 'FX:GBPUSD',
+          d: 'GBP to USD',
         },
         {
           s: 'FX:USDJPY',
+          d: 'USD to JPY',
         },
         {
           s: 'FX:USDCHF',
+          d: 'USD to CHF',
         },
         {
           s: 'FX:AUDUSD',
+          d: 'AUD to USD',
         },
         {
           s: 'FX:USDCAD',
+          d: 'USD to CAD',
         },
       ],
       originalTitle: 'Forex',

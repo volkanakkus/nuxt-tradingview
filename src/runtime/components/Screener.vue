@@ -16,13 +16,13 @@ const props = defineProps({
   },
 });
 const options = {
-  width: 1100,
-  height: 523,
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
   defaultColumn: 'overview',
   defaultScreen: 'general',
   market: 'forex',
   showToolbar: true,
-  colorTheme: 'light',
   locale: 'en',
   ...props.options,
 };

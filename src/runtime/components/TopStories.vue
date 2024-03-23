@@ -16,12 +16,12 @@ const props = defineProps({
   },
 });
 const options = {
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
   feedMode: 'all_symbols',
-  colorTheme: 'light',
   isTransparent: false,
   displayMode: 'regular',
-  width: 480,
-  height: 830,
   locale: 'en',
   ...props.options,
 };

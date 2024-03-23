@@ -17,12 +17,17 @@ const props = defineProps({
 });
 const options = {
   dataSource: 'Crypto',
-  width: 770,
-  height: 400,
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
+  blockSize: 'market_cap_calc',
+  blockColor: 'change',
+  locale: 'en',
+  symbolUrl: '',
   hasTopBar: false,
   isDataSetEnabled: false,
-  colorTheme: 'dark',
-  locale: 'en',
+  isZoomEnabled: true,
+  hasSymbolTooltip: true,
   ...props.options,
 };
 

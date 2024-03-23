@@ -17,16 +17,16 @@ const props = defineProps({
 });
 
 const options = {
+  width: '100%',
+  height: 450,
+  colorTheme: 'dark',
   symbols: [
     ['Apple', 'AAPL|1D'],
     ['Google', 'GOOGL|1D'],
     ['Microsoft', 'MSFT|1D'],
   ],
   chartOnly: false,
-  width: 550,
-  height: 400,
   locale: 'en',
-  colorTheme: 'light',
   autosize: false,
   showVolume: false,
   showMA: false,

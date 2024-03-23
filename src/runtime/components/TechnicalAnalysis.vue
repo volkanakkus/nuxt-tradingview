@@ -16,14 +16,15 @@ const props = defineProps({
   },
 });
 const options = {
-  interval: '1m',
-  width: 425,
-  isTransparent: false,
+  width: '100%',
   height: 450,
+  colorTheme: 'dark',
+  interval: '1m',
+  isTransparent: false,
   symbol: 'NASDAQ:AAPL',
   showIntervalTabs: true,
+  displayMode: 'single',
   locale: 'en',
-  colorTheme: 'light',
   ...props.options,
 };
 
