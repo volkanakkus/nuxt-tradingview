@@ -17,10 +17,10 @@ Use the TradingView Widgets in your Nuxt 3 Application
 <!-- Highlight some of the features your module provide here -->
 - 🧺 Multiple Widgets in Single Page
 - 🍧 No Registration or API for TradingView
-- 🌴 Optional Widget Inclusion
-  
-[✨ &nbsp;Release Notes](/CHANGELOG.md)
+- 🌴 Optional Widget Inclusion (For Reducing Bundle Size)
+- 🍽️ Customizable Component Names with Prefix Option
 
+[✨ &nbsp;Release Notes](/CHANGELOG.md)
 
 ## Documentation
 
