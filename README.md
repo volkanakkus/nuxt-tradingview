@@ -24,9 +24,9 @@ Use the TradingView Widgets in your Nuxt 3 Application
 
 ## Documentation
 
-We've prepared **detailed documentation and playground** you can [**find here**](https://nuxt-tradingview.volkanakkus.com/), but also you can check the examples below.
+We've prepared **detailed documentation and playground** which you can [find here](https://nuxt-tradingview.volkanakkus.com/), but you can also refer to the examples below. 
 
-And also you can look over the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more info about of the widgets.
+Additionally, you can check the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/) for more information and configuration about the widgets.
 
 ## Quick Setup
 
@@ -52,12 +52,10 @@ export default defineNuxtConfig({
   ]
 })
 ```
-
 That's it! You can now use TradingView Widgets in your Nuxt app ✨
 
 ## Widgets Built-in
-
-When you add this module, the following widget components are **automatically imported** into the project.
+When you add this module, the following widget components are **automatically imported** into the project:
 
 -   Chart
 -   CompanyProfile
@@ -83,7 +81,7 @@ When you add this module, the following widget components are **automatically im
 
 ## Nuxt 3 Example
 
-The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied. Check available options on [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
+The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied. Check available options on the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
 
 
 ### Basic Usage
@@ -186,13 +184,11 @@ const options = computed(() => ({
 
 ## Module Options
 
-The module by default will inject **all widgets** but you can configure it to inject only the widgets you need. Also you can add prefix to widget component names to avoid conflicts with other local components.
-
-For module options, you must add `tradingview` config to `nuxt.config.ts`, 
+The module by default will inject **all widgets**, but you can configure it to inject only the widgets you need. Additionally, you can add a prefix to widget component names to avoid conflicts with other local components.
 
 ### prefix
 
-Add a `prefix` into `tradingview` section to use every widget with that prefix.
+To change default widget component names, you can add a `prefix` into the `tradingview` section to use every widget with that prefix.
 
 
 ```js
@@ -203,7 +199,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Then you can use the components as:
+Then you can use the components as follows:
 
 ```js
 <template>
@@ -214,12 +210,11 @@ Then you can use the components as:
 </template>
 ```
 
-If `prefix` is not defined, you can use the components as shown as in the docs. 
-
+If `prefix` is not defined, you can use the components as shown in the documentation.
 
 ### importOnly
 
-Add a `importOnly` into `tradingview` section to inject only the widgets you need. This can be useful if you want to reduce the bundle size. 
+To reduce the bundle size, you can import only the widgets you need. Add an `importOnly` parameter to the `tradingview` section to inject only the widgets you need. 
 
 ```js
 export default defineNuxtConfig({
@@ -230,7 +225,7 @@ export default defineNuxtConfig({
 ```
 
 > [!NOTE]
-> Make sure to use the exact name of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](https://nuxt-tradingview.volkanakkus.com/documentation/widgets/overview).
+> Make sure to use the exact names of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](https://nuxt-tradingview.volkanakkus.com/documentation/widgets/overview).
 
 ---
 
