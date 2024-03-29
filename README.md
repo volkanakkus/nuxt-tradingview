@@ -251,7 +251,7 @@ npm run lint
 
 ---
 
-This software is licensed under the MIT License. See the LICENSE file for details. [@volkanakkus](https://github.com/volkanakkus) | Special thanks to [@ehsan-shv](https://github.com/ehsan-shv) 💚 
+This software is licensed under the [MIT License](https://github.com/volkanakkus/nuxt-tradingview/blob/main/LICENSE) | @volkanakkus | Special thanks to [@ehsan-shv](https://github.com/ehsan-shv) 💚 
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-tradingview/latest.svg?style=flat&colorA=020420&colorB=00DC82
