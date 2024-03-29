@@ -227,11 +227,6 @@ export default defineNuxtConfig({
 > [!NOTE]
 > Make sure to use the exact names of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](https://nuxt-tradingview.volkanakkus.com/documentation/widgets/overview).
 
----
-
-And also special thanks to [@ehsan-shv](https://github.com/ehsan-shv), this module created with the same concept of [vue-tradingviewWidgets
-](https://github.com/ehsan-shv/vue-tradingviewWidgets) package 💚 
-
 ## Development
 
 ```bash
@@ -253,6 +248,10 @@ npm run dev:docs
 # Run ESLint
 npm run lint
 ```
+
+---
+
+This software is licensed under the MIT License. See the LICENSE file for details. [@volkanakkus](https://github.com/volkanakkus) | Special thanks to [@ehsan-shv](https://github.com/ehsan-shv) 💚 
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-tradingview/latest.svg?style=flat&colorA=020420&colorB=00DC82
