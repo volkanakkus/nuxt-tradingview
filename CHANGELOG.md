@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.3.1
+
+### 🚀 Enhancements
+
+- Set width and height to 100% in options if autosize option is true ([c3c5de9](https://github.com/volkanakkus/nuxt-tradingview/commit/c3c5de9))
+
+### 🩹 Fixes
+
+- Remove default options if there are any prop options ([6cca163](https://github.com/volkanakkus/nuxt-tradingview/pull/3/commits/6cca16384d0a66f1cce02ef8dbadc348b83deeb9))
+
+### 🏡 Chore
+
+- Add npm keywords & update playground script to codesandbox ([d86d198](https://github.com/volkanakkus/nuxt-tradingview/commit/d86d198))
+
+
+### 📖 Documentation
+
+- Update module version to latest ([e2886be](https://github.com/volkanakkus/nuxt-tradingview/commit/e2886be))
+- Update docs for better clarification ([8d3b437](https://github.com/volkanakkus/nuxt-tradingview/commit/8d3b437))
+
+  
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.3.0...v1.3.1)
+
+### ❤️ Contributors
+
+- [Volkan Akkuş](https://github.com/volkanakkus) 
+
+### ✨ Thanks To:
+
+- [@a-aslani: #2](https://github.com/volkanakkus/nuxt-tradingview/issues/2) 
+
 ## v1.3.0
 
 ### 🚀 Enhancements
