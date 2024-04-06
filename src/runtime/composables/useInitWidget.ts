@@ -31,6 +31,11 @@ export default (
     if (!canUseDOM()) return;
     if (scriptExists()) return;
 
+    if (options.autosize) {
+      options.width = '100%';
+      options.height = '100%';
+    }
+
     const script = document.createElement('script');
     script.id = scriptID.value;
     script.type = 'text/javascript';

@@ -5,6 +5,27 @@
   "repository": "volkanakkus/nuxt-tradingview",
   "license": "MIT",
   "type": "module",
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "nuxt-3",
+    "tradingview",
+    "widgets",
+    "chart",
+    "stocks",
+    "market",
+    "crypto",
+    "forex",
+    "trading",
+    "finance",
+    "module",
+    "vue",
+    "vue3",
+    "nuxt-module",
+    "nuxt-component",
+    "typescript",
+    "front-end"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
@@ -23,8 +44,8 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "dev:docs": "cd docs && yarn && yarn dev",
-    "stackblitz": "cd .stackblitz && yarn && yarn dev",
-    "release": "npm run lint && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "codesandbox": "cd .codesandbox && yarn && yarn dev",
+    "release": "npm run lint && npm run prepack && changelogen && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"

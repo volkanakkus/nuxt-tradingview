@@ -1,5 +1,11 @@
 <template>
-  <div :id="container" ref="tradingview" />
+  <div
+    :id="container"
+    ref="tradingview"
+    :style="{
+      width: options.autosize && '100%',
+      height: options.autosize && '100%',
+    }" />
 </template>
 
 <script lang="ts" setup>
@@ -15,7 +21,8 @@ const props = defineProps({
     default: 'stock-heat-map',
   },
 });
-const options = {
+
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
@@ -30,7 +37,6 @@ const options = {
   isDataSetEnabled: false,
   isZoomEnabled: true,
   hasSymbolTooltip: true,
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

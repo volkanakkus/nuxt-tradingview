@@ -1,5 +1,11 @@
 <template>
-  <div :id="container" ref="tradingview" />
+  <div
+    :id="container"
+    ref="tradingview"
+    :style="{
+      width: options.autosize && '100%',
+      height: options.autosize && '100%',
+    }" />
 </template>
 
 <script lang="ts" setup>
@@ -15,7 +21,8 @@ const props = defineProps({
     default: 'ticker',
   },
 });
-const options = {
+
+const options = props.options || {
   colorTheme: 'dark',
   symbols: [
     {
@@ -42,7 +49,6 @@ const options = {
   isTransparent: false,
   showSymbolLogo: true,
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(
