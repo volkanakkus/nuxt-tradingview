@@ -15,14 +15,13 @@ const props = defineProps({
     default: 'forex-heat-map',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
   currencies: ['EUR', 'USD', 'JPY', 'GBP', 'CHF', 'AUD', 'CAD', 'NZD', 'CNY'],
   isTransparent: false,
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

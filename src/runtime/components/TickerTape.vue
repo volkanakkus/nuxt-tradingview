@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'ticker-tape',
   },
 });
-const options = {
+const options = props.options || {
   colorTheme: 'dark',
   showSymbolLogo: true,
   isTransparent: false,
@@ -43,7 +43,6 @@ const options = {
       title: 'Ethereum',
     },
   ],
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

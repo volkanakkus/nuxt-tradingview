@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'technical-analysis',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
@@ -25,7 +25,6 @@ const options = {
   showIntervalTabs: true,
   displayMode: 'single',
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

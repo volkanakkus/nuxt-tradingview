@@ -16,13 +16,12 @@ const props = defineProps({
   },
 });
 
-const options = {
+const options = props.options || {
   colorTheme: 'dark',
   symbol: 'FX:EURUSD',
   width: 350,
   isTransparent: false,
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'fundamental-data',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
@@ -24,7 +24,6 @@ const options = {
   displayMode: 'regular',
   symbol: 'NASDAQ:AAPL',
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'top-stories',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
@@ -23,7 +23,6 @@ const options = {
   isTransparent: false,
   displayMode: 'regular',
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

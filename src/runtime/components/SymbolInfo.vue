@@ -15,13 +15,12 @@ const props = defineProps({
     default: 'symbol-info',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   colorTheme: 'dark',
   symbol: 'NASDAQ:AAPL',
   locale: 'en',
   isTransparent: false,
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

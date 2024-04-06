@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'crypto-market',
   },
 });
-const options = {
+const options = props.options || {
   width: '100%',
   height: 450,
   colorTheme: 'dark',
@@ -23,7 +23,6 @@ const options = {
   screener_type: 'crypto_mkt',
   displayCurrency: 'USD',
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'crypto-heat-map',
   },
 });
-const options = {
+const options = props.options || {
   dataSource: 'Crypto',
   width: '100%',
   height: 450,
@@ -28,7 +28,6 @@ const options = {
   isDataSetEnabled: false,
   isZoomEnabled: true,
   hasSymbolTooltip: true,
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(

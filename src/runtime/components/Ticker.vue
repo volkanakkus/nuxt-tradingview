@@ -15,7 +15,7 @@ const props = defineProps({
     default: 'ticker',
   },
 });
-const options = {
+const options = props.options || {
   colorTheme: 'dark',
   symbols: [
     {
@@ -42,7 +42,6 @@ const options = {
   isTransparent: false,
   showSymbolLogo: true,
   locale: 'en',
-  ...props.options,
 };
 
 const { container, tradingview } = useInitWidget(
