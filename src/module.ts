@@ -14,7 +14,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-tradingview',
     configKey: 'tradingview',
     compatibility: {
-      nuxt: '^3.0.0',
+      nuxt: '>=3.0.0',
     },
   },
   defaults: {
