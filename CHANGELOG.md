@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.3.2
+
+### 🏡 Chore
+
+- Indicate compatibility with new v4 major ([47f70f6](https://github.com/volkanakkus/nuxt-tradingview/commit/47f70f6))
+
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.3.1...v1.3.2)
+
+### ❤️ Contributors
+
+- Daniel Roe ([@danielroe](https://github.com/volkanakkus/nuxt-tradingview/issues/6))
+
 ## v1.3.1
 
 ### 🚀 Enhancements
