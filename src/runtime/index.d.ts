@@ -1,4 +1,4 @@
-declare module 'nuxt/schema' {
+declare module '@nuxt/schema' {
   interface PublicRuntimeConfig {
     tradingview: {
       experimental?: {
