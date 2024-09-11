@@ -7,10 +7,10 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Use the TradingView Widgets in your Nuxt 3 Application
+Use the TradingView Widgets in your Nuxt Application
+- Compatibility: ```Nuxt >= 3```
+- [🏀 Online playground](https://nuxt-tradingview.volkanakkus.com/playground)
 
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-tradingview?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
@@ -79,7 +79,7 @@ When you add this module, the following widget components are **automatically im
 -   TickerTape
 -   TopStories
 
-## Nuxt 3 Example
+## Examples
 
 The built-in widgets have default options based on Tradingview. If you did not define any options, the default options will be applied. Check available options on the [Tradingview Docs](https://www.tradingview.com/widget-docs/widgets/)
 
@@ -245,8 +245,6 @@ npm run dev:build
 # Develop the docs
 npm run dev:docs
 
-# Run ESLint
-npm run lint
 ```
 
 ---
