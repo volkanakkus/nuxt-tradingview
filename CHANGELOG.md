@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.3.3
+
+### 🩹 Fixes
+
+- Augment @nuxt/schema rather than nuxt/schema ([af34b6e](https://github.com/volkanakkus/nuxt-tradingview/commit/af34b6e))
+
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.3.2...v1.3.3)
+
+### ❤️ Contributors
+
+- Daniel Roe ([@danielroe](https://github.com/volkanakkus/nuxt-tradingview/pull/7))
+
 ## v1.3.2
 
 ### 🏡 Chore
