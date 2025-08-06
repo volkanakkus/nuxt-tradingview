@@ -3,36 +3,30 @@
     :id="container"
     ref="tradingview"
     :style="{
-      width: options.autosize && '100%',
-      height: options.autosize && '100%',
+      width: options?.autosize ? '100%' : '',
+      height: options?.autosize ? '100%' : '',
     }" />
 </template>
 
 <script lang="ts" setup>
+import { companyProfileOptions } from '../data/defaultWidgetOptions';
 import useInitWidget from '../composables/useInitWidget';
 
-const props = defineProps({
-  options: {
-    type: Object,
-    default: () => {},
-  },
-  class: {
-    type: String,
-    default: 'company-profile',
-  },
-});
-
-const options = props.options || {
-  width: '100%',
-  height: 450,
-  isTransparent: false,
-  colorTheme: 'dark',
-  symbol: 'NASDAQ:AAPL',
-  locale: 'en',
+type CompanyProfileOptions = typeof companyProfileOptions & {
+  [key: string]: unknown;
 };
 
+const props = withDefaults(defineProps<{
+  options?: Partial<CompanyProfileOptions>
+  class?: string
+}>(), {
+  class: 'company-profile',
+  options: undefined
+})
+
 const { container, tradingview } = useInitWidget(
-  options,
+  companyProfileOptions as CompanyProfileOptions,
+  props.options as CompanyProfileOptions,
   props.class,
   'https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js'
 );

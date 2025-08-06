@@ -2,10 +2,15 @@ import { defineNuxtModule, addComponent, createResolver } from '@nuxt/kit';
 import type { AllWidgets } from './runtime/types';
 
 export interface ModuleOptions {
-  prefix?: string;
-  importOnly?: Partial<AllWidgets>[];
+  prefix?: string; 
+  // Prefix for component names
+  importOnly?: Partial<AllWidgets>[]; 
+  // If provided, only these components will be imported
+  overrideDefaults?: boolean; 
+  // If true, allows overriding default options in components
   experimental?: {
-    anonymousCrossOrigin?: boolean;
+    anonymousCrossOrigin?: boolean; 
+    // If true, adds crossOrigin="anonymous" to script tags
   };
 }
 
@@ -20,6 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     prefix: '',
     importOnly: undefined,
+    overrideDefaults: true,
     experimental: {
       anonymousCrossOrigin: false,
     },
@@ -70,9 +76,10 @@ export default defineNuxtModule<ModuleOptions>({
 
     importWidgets.map(processComponent).forEach(addComponent);
 
-    // Add experimental options to runtimeConfig
+    // Add options to runtimeConfig
     nuxt.options.runtimeConfig.public.tradingview = {
       ...nuxt.options.runtimeConfig.public.tradingview,
+      overrideDefaults: !!options.overrideDefaults,
       experimental: {
         anonymousCrossOrigin: !!options.experimental?.anonymousCrossOrigin,
       },

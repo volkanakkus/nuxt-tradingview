@@ -3,35 +3,30 @@
     :id="container"
     ref="tradingview"
     :style="{
-      width: options.autosize && '100%',
-      height: options.autosize && '100%',
+      width: options?.autosize ? '100%' : '',
+      height: options?.autosize ? '100%' : '',
     }" />
 </template>
 
 <script lang="ts" setup>
+import { singleTickerOptions } from '../data/defaultWidgetOptions';
 import useInitWidget from '../composables/useInitWidget';
 
-const props = defineProps({
-  options: {
-    type: Object,
-    default: () => {},
-  },
-  class: {
-    type: String,
-    default: 'single-ticker',
-  },
-});
-
-const options = props.options || {
-  colorTheme: 'dark',
-  symbol: 'FX:EURUSD',
-  width: 350,
-  isTransparent: false,
-  locale: 'en',
+type SingleTickerOptions = typeof singleTickerOptions & {
+  [key: string]: unknown;
 };
 
+const props = withDefaults(defineProps<{
+  options?: Partial<SingleTickerOptions>
+  class?: string
+}>(), {
+  class: 'single-ticker',
+  options: undefined
+})
+
 const { container, tradingview } = useInitWidget(
-  options,
+  singleTickerOptions as SingleTickerOptions,
+  props.options as SingleTickerOptions,
   props.class,
   'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js'
 );

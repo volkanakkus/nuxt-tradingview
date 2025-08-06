@@ -3,10 +3,15 @@ import { useRuntimeConfig } from '#app';
 import type { ReturnedObject } from '../types';
 
 export default (
-  options: any,
+  defaultOptions: any,
+  userOptions: any,
   widgetKey: string,
   src: string
 ): ReturnedObject => {
+  const runtimeConfig = useRuntimeConfig().public.tradingview;
+
+  const options = runtimeConfig?.overrideDefaults === true ? (userOptions || defaultOptions) : { ...defaultOptions, ...userOptions }
+
   const container = ref(`tw-${widgetKey}-container`);
   const scriptID = ref(`tw-${widgetKey}-script`);
   const tradingview = ref<HTMLDivElement>();
@@ -42,7 +47,6 @@ export default (
     script.async = true;
     script.src = src;
 
-    const runtimeConfig = useRuntimeConfig().public.tradingview;
     if (runtimeConfig.experimental?.anonymousCrossOrigin) {
       script.crossOrigin = 'anonymous';
     }

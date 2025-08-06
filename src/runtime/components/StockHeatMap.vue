@@ -3,44 +3,30 @@
     :id="container"
     ref="tradingview"
     :style="{
-      width: options.autosize && '100%',
-      height: options.autosize && '100%',
+      width: options?.autosize ? '100%' : '',
+      height: options?.autosize ? '100%' : '',
     }" />
 </template>
 
 <script lang="ts" setup>
+import { stockHeatMapOptions } from '../data/defaultWidgetOptions';
 import useInitWidget from '../composables/useInitWidget';
 
-const props = defineProps({
-  options: {
-    type: Object,
-    default: () => {},
-  },
-  class: {
-    type: String,
-    default: 'stock-heat-map',
-  },
-});
-
-const options = props.options || {
-  width: '100%',
-  height: 450,
-  colorTheme: 'dark',
-  exchanges: [],
-  dataSource: 'SPX500',
-  grouping: 'no_group',
-  blockSize: 'market_cap_basic',
-  blockColor: 'Perf.YTD',
-  locale: 'en',
-  symbolUrl: '',
-  hasTopBar: false,
-  isDataSetEnabled: false,
-  isZoomEnabled: true,
-  hasSymbolTooltip: true,
+type StockHeatMap = typeof stockHeatMapOptions & {
+  [key: string]: unknown;
 };
 
+const props = withDefaults(defineProps<{
+  options?: Partial<StockHeatMap>
+  class?: string
+}>(), {
+  class: 'stock-heat-map',
+  options: undefined
+})
+
 const { container, tradingview } = useInitWidget(
-  options,
+  stockHeatMapOptions as StockHeatMap,
+  props.options as StockHeatMap,
   props.class,
   'https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js'
 );
