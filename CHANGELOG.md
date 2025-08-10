@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.3.4
+
+### 🚀 Enhancements
+
+- Add `overrideDefaults` module option to control merging behavior between default widget options and user-provided options ([#8](https://github.com/volkanakkus/nuxt-tradingview/pull/8))
+
+### 📖 Documentation
+
+- Add `overrideDefaults` in README and docs configuration page
+
+[compare changes](https://github.com/volkanakkus/nuxt-tradingview/compare/v1.3.3...v1.3.4)
+
+### ❤️ Contributors
+
+- [@aligu7](https://github.com/volkanakkus/nuxt-tradingview/pull/8)
+- [Volkan Akkuş](https://github.com/volkanakkus)
+
 ## v1.3.3
 
 ### 🩹 Fixes

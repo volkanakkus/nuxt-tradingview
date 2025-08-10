@@ -227,6 +227,22 @@ export default defineNuxtConfig({
 > [!NOTE]
 > Make sure to use the exact names of the widgets. Even if you define a `prefix`, you must use the default name of the widgets. You can find [all widget names here](https://nuxt-tradingview.volkanakkus.com/documentation/widgets/overview).
 
+### overrideDefaults
+
+Default value: `true`, controls how default widget options (props) are combined with the options you pass to widget components.
+
+- When it's `true`, default options are applied and your widget `options` (props) override only the fields you set.
+- When it's `false`: explicit merge mode; starts from defaults and applies your `options` (useful to preserve defaults when providing partial options).
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  tradingview: {
+    overrideDefaults: true // Default
+  }
+})
+```
+
 ## Development
 
 ```bash
